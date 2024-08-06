@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>SignIn Page</title>
+    <style>
+        .footer {
+    background-color: #64706b;
+    text-decoration: none;
+    margin-top: 10%;
+    color:bisque;
+    text-align: center;
+}
+    </style>
+</head>
+<body style="background-image: url(./images/m5.jpg);" class="main" onload="signin()">
+    <div class="main">
+        <div class="nav">
+            <h3 class="logo">
+                <font face="logo" size="9" style="color:antiquewhite">RISE Airlanes</font>
+            </h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">AboutUs</a></li>
+                <li><a href="./Contact.html">ContactUs</a></li>
+                <li><a href="./SignIn.html">SignIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="p">
+        <div class="box">
+            <div class="button">
+                <div id="btn"></div>
+                <button type="button" class="toggle" onclick="login()">LogIn</button>
+                <button type="button" class="toggle" onclick="signin()">SignUp</button>
+            </div>
+            <form action="./Success.html" id="login" class="ip1">
+                <input type="text" class="inp2" placeholder="userid" required>
+                <input type="text" class="inp2" placeholder="Enter password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-box">Log In</button>
+            </form>
+            <form id="signin" class="ip1" onsubmit="register(event)">
+                <input type="text"class="inp2" placeholder="userid" required>
+                <input type="Email" class="inp2" placeholder="Enter email" required>
+                <input type="text" class="inp2" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-box" onsubmit="login()">Register</button>
+            </form>
+            <script>
+                var x=document.getElementById('login');
+                var y=document.getElementById('signin');
+                var z=document.getElementById('btn');
+                function signin(){
+                    x.style.left="-400px";
+                    y.style.left="50px";
+                    z.style.left="110px";
+                }
+                function login(){
+                    x.style.left="50px";
+                    y.style.left="450px";
+                    z.style.left="0px";
+                }
+                function register(event) {
+                    event.preventDefault();
+                    login();
+                }
+                function log(event) {
+                    event.preventDefault();
+                    login();
+                }
+            </script>
+        </div>
+    </div>
+    <footer class="footer p-1">
+        <div class="row">
+            <div class="col-md-15">
+                <p>&copy; 2024 RISE Airlanes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
