@@ -14,7 +14,7 @@ Welcome to the Airline Sample Website repository! This project demonstrates a re
 
 ## 🌐 Live Demo
 
-[Click here to view the live demo](https://lohithakota.github.io/218B1A0515-UI-Development-Hackathon/)
+[Click here to view the live demo](https://lohithakota.github.io/Airlane-Sample-web/)
 
 ---
 
